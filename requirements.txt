@@ -1,0 +1,10 @@
+requests==2.22.0
+flask==1.1.1
+flask_session==0.3.1
+sqlalchemy==1.3.13
+werkzeug.exceptions==0.16.0
+Jinja2==2.11.1
+
+#For Heroku deployment
+psycopg2==2.8.4
+gunicorn==20.0.4

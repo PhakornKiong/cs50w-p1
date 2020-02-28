@@ -1,0 +1,28 @@
+
+{% extends "layout.html" %}
+
+{% block title %}
+    Results
+{% endblock %}
+
+{% block main %}
+
+<h3>Search Results</h3>
+<div class="dropdown-divider"></div>
+<div class="container results-container">
+
+    {% for book in books %}
+        <div class="card border-primary mb-3">
+            <div class="card-body">
+              <h4 class="card-title">{{book[1]}}</h4>
+              <h6 class="card-text">{{book[2]}}</h6>
+              <h6 class="card-text">{{book[3]}}</h6>
+              <h6 class="card-text">{{book[4]}}</h6>
+            </div>
+            <div class="card-footer">
+                <a href="/book/{{book[0]}}" class="card-link">Go to book page</a>
+            </div>
+        </div>
+    {% endfor %}
+</div>
+{% endblock %}

@@ -3,7 +3,7 @@ flask==1.1.1
 flask_session==0.3.1
 sqlalchemy==1.3.13
 werkzeug==0.16.0
-Jinja2==2.11.1
+Jinja2==2.11.3
 
 #For Heroku deployment
 psycopg2==2.8.4
